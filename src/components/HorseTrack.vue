@@ -50,7 +50,8 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useStore } from 'vuex'
-import type { RaceState, Horse } from '../store/modules/race'
+import type { RaceState } from '../store/modules/race'
+import type {Horse} from '../types/race.ts'
 
 const store = useStore<{ race: RaceState }>()
 
